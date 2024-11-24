@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alram</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="alarm">
+      <h1 id="head">I am here to alert you</h1>
+      <div class="lable">
+        <label for="alarmTime">Set Alarm [HH:MM]</label>
+      </div>
+      
+
+      <div class="container">
+        <div class="main"></div>
+        <div class="input">
+          <input id="time" type="time" />
+        </div>
+
+        <div class="btn">
+          <button  id="btn" >SET </button>
+        </div>
+        <div class="msg">
+          <p id="msg">SET alarm ⏰</p>
+          <audio id="alarmsound" src="alarm.mp3" preload="auto"></audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

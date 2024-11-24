@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #7ce245;
+}
+
+#head{
+    color: rgb(119, 47, 47);
+    text-align: center;
+    margin-top: 10px;
+}
+label{
+   
+    color: rgb(128, 41, 135);
+    margin-left: 44px;
+    margin-top: 5px;
+}
+.alarm{
+    min-height: 40vh;
+    min-width: 80vh;
+    background-color: rgb(195, 223, 247);
+    border-radius: 2rem;
+ 
+   
+
+    align-items: center;
+    
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    gap: 20px;
+}
+
+input{
+    min-width: 25vh;
+    min-height: 2rem;
+}
+button{
+    min-width: 15vh;
+    min-height: 5vh;
+}
+
+input,button{
+    border: 1px solid rgb(45, 13, 13);
+    border-radius: 0.78rem;
+   
+    
+}
+button:hover{
+    background-color:#7bdc47;
+}
+
+.msg{
+    font-size: 1.5rem;
+  
+}
