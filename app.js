@@ -8,14 +8,15 @@ const msg = document.getElementById("msg")
 const sound = document.getElementById("alarmsound")
 
 
-function setlalarm(){
+function setalarm(event){
+    event.preventDefault();
     const input = document.getElementById("time").value;
     if (!input){
         alert("Please  set a valid time");
         return ;
     }
     alarmTime = input;
-    msg.innerText = `Alarm set for ${alarmTime}`;
+    msg.innerText = `Alarm set for💁‍♂️ ${alarmTime}`;
     
     if(alarmTimeout) clearTimeout(alarmTimeout);
     
@@ -37,22 +38,22 @@ function checkAlarm (){
             sound.play();
             // alert("Alarm is ringing");
 
-            document.getElementById("msg").innerText = "Alarm finished " ;
+            document.getElementById("msg").innerText = "Alarm finished🤗 " ;
 
             // for stop sound 
             stopTimeout = setTimeout( ()=>{
                 sound.pause();
                 sound.currentTime = 0;  // for start audio from 0 platback
-                msg.innerText = "Alarm Stopped"
+                msg.innerText = "Alarm Stopped😊"
                 
-            },29000);
+            },15000);
 
         } , timeToAlarm);
 
        
 
     } else {
-        alert("The time is already passed foe today :");
+        alert("The time is already passed fortoday😞:");
 
         document.getElementById("msg").innerText  = "Set a  future time for the alarm";
 
@@ -61,6 +62,7 @@ function checkAlarm (){
  
 }
     
-btn.addEventListener('click',()=>{
-    setlalarm();
-})
+// btn.addEventListener('click',(e)=>{
+//     event.preventDefault();
+//      setalarm();
+// })

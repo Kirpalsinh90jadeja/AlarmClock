@@ -8,23 +8,19 @@
   </head>
   <body>
     <div class="alarm">
-      <h1 id="head">I am here to alert you</h1>
-      <div class="lable">
-        <label for="alarmTime">Set Alarm [HH:MM]</label>
-      </div>
-      
-
       <div class="container">
-        <div class="main"></div>
-        <div class="input">
-          <input id="time" type="time" />
-        </div>
+        <h2 id="head">Time to Wake</h2>
+        <form onsubmit="setalarm(event)" action="" class="form">
+          <div>
+            <label class="label" for="alarmTime">Set Alarm [HH:MM]</label>
+          </div>
 
-        <div class="btn">
-          <button  id="btn" >SET </button>
-        </div>
+          <input id="time" type="time" />
+          <button id="btn">SET</button>
+        </form>
+
         <div class="msg">
-          <p id="msg">SET alarm ⏰</p>
+          <p id="msg">SET alarm ⌚</p>
           <audio id="alarmsound" src="alarm.mp3" preload="auto"></audio>
         </div>
       </div>
